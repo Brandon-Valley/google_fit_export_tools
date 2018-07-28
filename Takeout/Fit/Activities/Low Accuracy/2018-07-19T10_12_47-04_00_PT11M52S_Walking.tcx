@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TrainingCenterDatabase
+    xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2"
+    xmlns:ns2="http://www.garmin.com/xmlschemas/UserProfile/v2"
+    xmlns:ns3="http://www.garmin.com/xmlschemas/ActivityExtension/v2"
+    xmlns:ns4="http://www.garmin.com/xmlschemas/ProfileExtension/v1"
+    xmlns:ns5="http://www.garmin.com/xmlschemas/ActivityGoals/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd">
+    <Activities>
+        <Activity Sport="Other">
+            <Id>2018-07-19T14:12:47.052Z</Id>
+            <Notes>Walking</Notes>
+            <Lap StartTime="2018-07-19T14:12:47.052Z">
+                <Track>
+                    <Trackpoint>
+                        <DistanceMeters>0.0</DistanceMeters>
+                        <Time>2018-07-19T14:12:47.052Z</Time>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <DistanceMeters>7.191305637359619</DistanceMeters>
+                        <Time>2018-07-19T14:13:09.241Z</Time>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <DistanceMeters>56.33878183364868</DistanceMeters>
+                        <Time>2018-07-19T14:13:53.806Z</Time>
+                        <Position>
+                            <LatitudeDegrees>38.7742746</LatitudeDegrees>
+                            <LongitudeDegrees>-90.3914512</LongitudeDegrees>
+                        </Position>
+                        <AltitudeMeters>135.471435546875</AltitudeMeters>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <DistanceMeters>231.52963876724243</DistanceMeters>
+                        <Time>2018-07-19T14:18:03.065Z</Time>
+                        <Position>
+                            <LatitudeDegrees>38.7757496</LatitudeDegrees>
+                            <LongitudeDegrees>-90.3907422</LongitudeDegrees>
+                        </Position>
+                        <AltitudeMeters>143.60000610351562</AltitudeMeters>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <DistanceMeters>271.90403604507446</DistanceMeters>
+                        <Time>2018-07-19T14:19:06.079Z</Time>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <DistanceMeters>276.6605134010315</DistanceMeters>
+                        <Time>2018-07-19T14:19:30.929Z</Time>
+                    </Trackpoint>
+                </Track>
+                <DistanceMeters>276.6605134010315</DistanceMeters>
+                <TotalTimeSeconds>403.877</TotalTimeSeconds>
+                <Calories>29.972824096679688</Calories>
+                <Intensity>Active</Intensity>
+                <TriggerMethod>Manual</TriggerMethod>
+            </Lap>
+        </Activity>
+        <Activity Sport="Other">
+            <Id>2018-07-19T14:21:32.269Z</Id>
+            <Notes>Walking</Notes>
+            <Lap StartTime="2018-07-19T14:21:32.269Z">
+                <Track>
+                    <Trackpoint>
+                        <DistanceMeters>0.0</DistanceMeters>
+                        <Time>2018-07-19T14:21:32.269Z</Time>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <DistanceMeters>11.113836288452148</DistanceMeters>
+                        <Time>2018-07-19T14:22:05.551Z</Time>
+                        <Position>
+                            <LatitudeDegrees>38.7756067</LatitudeDegrees>
+                            <LongitudeDegrees>-90.3904781</LongitudeDegrees>
+                        </Position>
+                        <AltitudeMeters>143.60000610351562</AltitudeMeters>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <DistanceMeters>11.113836288452148</DistanceMeters>
+                        <Time>2018-07-19T14:23:04.476Z</Time>
+                    </Trackpoint>
+                </Track>
+                <DistanceMeters>11.113836288452148</DistanceMeters>
+                <TotalTimeSeconds>92.207</TotalTimeSeconds>
+                <Calories>6.842934608459473</Calories>
+                <Intensity>Active</Intensity>
+                <TriggerMethod>Manual</TriggerMethod>
+            </Lap>
+        </Activity>
+        <Activity Sport="Other">
+            <Id>2018-07-19T14:29:52.497Z</Id>
+            <Notes>Walking</Notes>
+            <Lap StartTime="2018-07-19T14:29:52.497Z">
+                <Track>
+                    <Trackpoint>
+                        <DistanceMeters>0.0</DistanceMeters>
+                        <Time>2018-07-19T14:29:52.497Z</Time>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <DistanceMeters>27.457712173461914</DistanceMeters>
+                        <Time>2018-07-19T14:31:46.626Z</Time>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <DistanceMeters>71.25930213928223</DistanceMeters>
+                        <Time>2018-07-19T14:33:28.542Z</Time>
+                    </Trackpoint>
+                </Track>
+                <DistanceMeters>71.25930213928223</DistanceMeters>
+                <TotalTimeSeconds>216.045</TotalTimeSeconds>
+                <Calories>16.033292770385742</Calories>
+                <Intensity>Active</Intensity>
+                <TriggerMethod>Manual</TriggerMethod>
+            </Lap>
+        </Activity>
+    </Activities>
+    <Author xsi:type="Application_t">
+        <Name>Google Fit</Name>
+        <Build>
+            <Version>
+                <VersionMajor>0</VersionMajor>
+                <VersionMinor>0</VersionMinor>
+                <BuildMajor>0</BuildMajor>
+                <BuildMinor>0</BuildMinor>
+            </Version>
+        </Build>
+        <LangID>en</LangID>
+        <PartNumber>000-00000-00</PartNumber>
+    </Author>
+</TrainingCenterDatabase>
