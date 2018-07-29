@@ -21,7 +21,6 @@ def main():
     for input_file_name in input_file_names:
         input_file_path = ACTIVITIES_DIR_PATH + '\\' + input_file_name
         new_run_session = Run_Session.Run_Session(input_file_path)
-#         new_run_session.print_data()#````````````````````````````````````````````````````````````````````````````````
         run_session_list.append(new_run_session)
     
     trace_list = plot_tools.build_trace_list(run_session_list)
