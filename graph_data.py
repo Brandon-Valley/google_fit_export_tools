@@ -8,7 +8,6 @@ import plot_tools
 
 ACTIVITIES_DIR_PATH = 'Takeout\Fit\Activities'
 INPUT_FILE_EXTENTION = '.tcx'
-# test_file = '2018-07-19T19_07_35-04_00_PT37M45S_Running.tcx'
 GRAPH_TITLE = 'Running Stats'
 GRAPH_FILENAME = 'graphs/Running_Stats' + arrow.now().format('YYYY-MM-DD') + '.html'
 

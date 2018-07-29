@@ -4,11 +4,9 @@ import plotly
 import plotly.graph_objs as go
 import datetime as dt
 
-# print('working...')
-# plotly.offline.plot({
-# "data": [go.Scatter(x=[dt.date(2018,1,4), dt.date(2018,1,5), dt.date(2018,1,1), dt.date(2018,1,10)], y=[4, 3, 2, 1])],#, go.Scatter(x=[12, 22, 32, 24], y=[4, 32, 22, 1])],
-# "layout": go.Layout(title="hello world"),
-# }, auto_open=True, filename = 'test_file222.html')
+from plotly import tools
+import plotly.plotly as py
+
 
 
 def str_to_dt(str_date):
@@ -50,11 +48,32 @@ def build_trace_list(run_session_list):
     
     
     
-def plot_all(title, filename, trace_list):
-    plotly.offline.plot({
-    "data": trace_list,#[go.Scatter(x=[dt.date(2018,1,4), dt.date(2018,1,5), dt.date(2018,1,1), dt.date(2018,1,10)], y=[4, 3, 2, 1])],#, go.Scatter(x=[12, 22, 32, 24], y=[4, 32, 22, 1])],
-    "layout": go.Layout(title=title),
-    }, auto_open=True, filename = filename)
+def plot_all(title, filename, trace_list):    
+#     trace1 = go.Scatter(x=[1, 2, 3], y=[4, 5, 6])
+#     trace2 = go.Scatter(x=[20, 30, 40], y=[50, 60, 70])
+#     trace3 = go.Scatter(x=[300, 400, 500], y=[600, 700, 800])
+#     trace4 = go.Scatter(x=[4000, 5000, 6000], y=[7000, 8000, 9000])
+    
+    fig = tools.make_subplots(rows=2, cols=2, subplot_titles=('Plot 1', 'Plot 2',
+                                                              'Plot 3', 'Plot 4'))
+    
+    fig.append_trace(trace_list[0], 1, 1)
+    fig.append_trace(trace_list[1], 1, 2)
+    fig.append_trace(trace_list[2], 2, 1)
+    fig.append_trace(trace_list[3], 2, 2)
+    
+    fig['layout'].update(height=700, width=1500, title='Multiple Subplots' +
+                                                      ' with Titles')
+    
+    plotly.offline.plot(fig, filename=filename, auto_open=True)
+#     
+#     
+#     
+#     
+#     plotly.offline.plot({
+#     "data": trace_list,#[go.Scatter(x=[dt.date(2018,1,4), dt.date(2018,1,5), dt.date(2018,1,1), dt.date(2018,1,10)], y=[4, 3, 2, 1])],#, go.Scatter(x=[12, 22, 32, 24], y=[4, 32, 22, 1])],
+#     "layout": go.Layout(title=title),
+#     }, auto_open=True, filename = filename)
 
     
     
