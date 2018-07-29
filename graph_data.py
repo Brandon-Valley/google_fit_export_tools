@@ -1,20 +1,34 @@
+import arrow
 
 from logger import txt_logger
 import Run_Session
-
-print("my boo is cute")
-
-
+import tools
+import plot_tools
 
 
+ACTIVITIES_DIR_PATH = 'Takeout\Fit\Activities'
+INPUT_FILE_EXTENTION = '.tcx'
+# test_file = '2018-07-19T19_07_35-04_00_PT37M45S_Running.tcx'
+GRAPH_TITLE = 'Running Stats'
+GRAPH_FILENAME = 'Running_Stats' + arrow.now().format('YYYY-MM-DD') + '.html'
 
 def main():
-    ACTIVITIES_DIR_PATH = 'Takeout\Fit\Activities'
+    print('working...')
     
-    test_file = '2018-07-19T19_07_35-04_00_PT37M45S_Running.tcx'
+    input_file_names = tools.file_names_in_dir(ACTIVITIES_DIR_PATH, INPUT_FILE_EXTENTION)
     
-    run_sesh = Run_Session.Run_Session(ACTIVITIES_DIR_PATH + '\\' + test_file)
-
+    run_session_list = []
+    for input_file_name in input_file_names:
+        input_file_path = ACTIVITIES_DIR_PATH + '\\' + input_file_name
+        new_run_session = Run_Session.Run_Session(input_file_path)
+#         new_run_session.print_data()#````````````````````````````````````````````````````````````````````````````````
+        run_session_list.append(new_run_session)
+    
+    trace_list = plot_tools.build_trace_list(run_session_list)
+    
+    plot_tools.plot_all(GRAPH_TITLE, GRAPH_FILENAME, trace_list)
+        
+    print('done!')
 
 
 
