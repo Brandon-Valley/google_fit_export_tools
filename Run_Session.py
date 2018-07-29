@@ -1,39 +1,5 @@
 import tools
 
-
-# oint>
-#                 </Track>
-#                 <DistanceMeters>3352.710985660553</DistanceMeters>
-#                 <TotalTimeSeconds>1303.219</TotalTimeSeconds>
-#                 <Calories>268.0570373535156</Calories>
-#                 <Intensity>Active</Intensity>
-#                 <TriggerMethod>Manual</TriggerMethod>
-#             </Lap>
-#         </Activity>
-#     </Activities>
-#     <Author xsi:type="Application_t">
-#         <Name>Google Fit</Name>
-#         <Build>
-#             <Version>
-#                 <VersionMajor>0</VersionMajor>
-#                 <VersionMinor>0</VersionMinor>
-#                 <BuildMajor>0</BuildMajor>
-#                 <BuildMinor>0</BuildMinor>
-#             </Version>
-#         </Build>
-#         <LangID>en</LangID>
-#         <PartNumber>000-00000-00</PartNumber>
-#     </Author>
-# </TrainingCenterDatabase>
-
-# 
-# def read_text_file(file_path):
-#     with open(file_path) as text_file:  # can throw FileNotFoundError
-#         result = tuple(l.rstrip() for l in text_file.readlines())
-#         return result
-
-
-
 class Run_Session:
     def __init__(self, input_file_path):
         run_vars = self.read_tcx_input(input_file_path)
